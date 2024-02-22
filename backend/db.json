@@ -1,25 +1,9 @@
 {
   "todo": [
     {
-      "name": "sai",
-      "email": "sai124@gmail.com",
-      "number": "7867887898",
-      "picture": "https://cdn.pixabay.com/photo/2016/12/08/17/05/sisters-1892276_640.jpg",
-      "id": 2
-    },
-    {
-      "name": "soujanya",
-      "email": "souja@gmail.com",
-      "number": "7868989898",
-      "picture": "https://cdn.pixabay.com/photo/2016/09/26/10/26/cute-cartoon-characters-1695612_640.png",
-      "id": 4
-    },
-    {
       "name": "manju",
       "email": "manju123@gmail.com",
-      "number": "7829181852",
-      "picture": "https://cdn.pixabay.com/photo/2023/07/31/13/42/anime-art-8161031_640.png",
-      "id": 5
+      "id": 19
     }
   ]
 }

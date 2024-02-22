@@ -6,15 +6,11 @@ export default function TodoList() {
   const [Updatedata, setUpdatedata] = useState({
     name: "",
     email: "",
-    number: "",
-    picture: "",
-  });
+     });
   const [tododata, settododata] = useState({
-    name: "manju",
-    email: "manju123@gmail.com",
-    number: "7829181852",
-    picture:
-      "https://cdn.pixabay.com/photo/2023/07/31/13/42/anime-art-8161031_640.png",
+    name: "soujanya",
+    email: "mkamble123@gmail.com",
+    
   });
   const handlepostdata = async () => {
     const { data } = await axios.post("http://localhost:3000/todo", tododata);
@@ -41,17 +37,17 @@ export default function TodoList() {
     handlegetdata();
   }, []);
   return (
-    <div className="container">
+    <div className="container mt-2">
       <div className="row">
 
         <div className="col">
           <div className="card p-2">
-            <div className="card-header text-center">TodoList</div>
+            <div className="card-header text-center">Users</div>
 
             <div className="mb-3">
               <label for="exampleInputEmail1" className="form-label">
                 {" "}
-                Name:
+               Author Name:
               </label>
               <input
                 type="text"
@@ -80,43 +76,13 @@ export default function TodoList() {
               />
             </div>
 
-            <div className="mb-3">
-              <label for="exampleInputPassword1" className="form-label">
-                Phone:
-              </label>
-              <input
-                type="email"
-                value={tododata.number}
-                onChange={(e) =>
-                  settododata({ ...tododata, number: e.target.value })
-                }
-                className="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-
-            <div className="mb-3">
-              <label for="exampleInputPassword1" className="form-label">
-                {" "}
-                Picture:
-              </label>
-              <input
-                type="picture"
-                value={tododata.picture}
-                onChange={(e) =>
-                  settododata({ ...tododata, picture: e.target.value })
-                }
-                className="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-
+            
             <button
               type="button"
               onClick={handlepostdata}
               className="btn1 mx-2 rounded text-white fw-light"
             >
-              Add Todo
+              Add user
             </button>
           </div>
         </div>
@@ -126,22 +92,13 @@ export default function TodoList() {
             {todoDatafrombe &&
               todoDatafrombe.map((item, index) => (
                 <>
-                  <div className="card">
-                    <div className="card-body">
-                      <img
-                        src={item.picture}
-                        height="150"
-                        width="150"
-                        alt="..."
-                        className="rounded-circle"
-                      />
-                    </div>
-
+                  <div className="card mx-2">
+                   
                     <div className="card-footer">
                       <h5>Id:{index + 1}</h5>
                       <h5>Name:{item.name}</h5>
                       <h5>Email:{item.email}</h5>
-                      <h5>Number:{item.number}</h5>
+                      
                     </div>
 
                     <div className="mt-2">
@@ -192,7 +149,7 @@ export default function TodoList() {
                 <div className="mb-3">
                   <label for="exampleInputEmail1" className="form-label">
                     {" "}
-                    Name:
+                 Author Name:
                   </label>
                   <input
                     type="text"
@@ -229,45 +186,7 @@ export default function TodoList() {
                   />
                 </div>
 
-                <div className="mb-3">
-                  <label for="exampleInputEmail1" className="form-label">
-                    {" "}
-                    Number:
-                  </label>
-                  <input
-                    type="text"
-                    value={Updatedata.number}
-                    onChange={(e) =>
-                      setUpdatedata({
-                        ...Updatedata,
-                        number: e.target.value,
-                      })
-                    }
-                    className="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-
-                <div className="mb-3">
-                  <label for="exampleInputEmail1" className="form-label">
-                    {" "}
-                    Picture:
-                  </label>
-                  <input
-                    type="text"
-                    value={Updatedata.picture}
-                    onChange={(e) =>
-                      setUpdatedata({
-                        ...Updatedata,
-                        picture: e.target.value,
-                      })
-                    }
-                    className="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
+               
               </div>
               <div class="modal-footer">
                 <button

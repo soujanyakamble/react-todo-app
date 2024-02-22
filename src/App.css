@@ -1,5 +1,5 @@
 .navbar{
-    background-color:#371f76;
+    background-color:#d31860;
     color:white;
 }
 .card-header{
@@ -19,12 +19,40 @@
     background-color:#6b5ca5;
     border: 4px #65358d;
 }
-
+.App{
+    height: 600px;
+    width: 100%;
+}
+.App-logo {
+    height: 5vmin;
+    pointer-events: none;
+    border-radius: 50%;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
 .form-label{
     color: hwb(210 96% 3%);
     font-weight: normal;
 }
 .card{
-    background-color:#ac94f4;
+    background-color:#f494c1d9;
     color: white;
+}
+.landingpagebanner{
+    /* background-color:#6b5ca5; */
+    background-image: url("https://www.istockphoto.com/photo/social-media-marketing-digitally-generated-image-engagement-gm1408387701-459258370?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_sponsored&utm_content=https%3A%2F%2Fpixabay.com%2Fimages%2Fsearch%2Fblogger%2F&utm_term=blogger");
+    height: 100px ;
+    width: 100px;
 }
